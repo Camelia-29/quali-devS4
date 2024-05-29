@@ -11,5 +11,9 @@ public class VoitureTest {
         assertEquals("bmw",v.getMarque());
         assertEquals(54712,v.getPrix());
 
+        v.setMarque("citroen");
+        assertEquals("citroen", v.getMarque());
+        v.setPrix(36521);
+        assertEquals(36521, v.getPrix());
     }
 }

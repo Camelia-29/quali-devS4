@@ -4,8 +4,6 @@ public class Voiture {
     public String marque;
     public float prix;
 
-    public Voiture(){}
-
     public Voiture(String m, float p){
         this.marque = m;
         this.prix = p;
