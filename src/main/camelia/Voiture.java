@@ -1,6 +1,6 @@
 package camelia;
 
-public class Voiture {
+public class Voiture{
     public String marque;
     public float prix;
 

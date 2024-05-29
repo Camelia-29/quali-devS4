@@ -1,0 +1,39 @@
+package camelia;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Service implements Statistique{
+
+    private ArrayList<Voiture> voitures;
+
+    public Service(){
+        ArrayList<Voiture> voitures = new ArrayList<Voiture>();
+    }
+
+    @Override
+    public int prix() throws ArithmeticException {
+        if (voitures.isEmpty()) {
+            throw new ArithmeticException("Il n'y a pas de voiture.");
+        }
+
+        int nbDeVoitures = voitures.size();
+        float prix = voitures.get(0).getPrix();
+
+        double remise = 0;
+        int maxRemise = 20000;
+        double prixTotal = nbDeVoitures * prix;
+
+        // Calcul de la remise
+        remise = Math.min(maxRemise, prixTotal * 0.05 * (nbDeVoitures / 5));
+
+        // Application de la remise
+        prixTotal -= remise;
+
+        return (int) prixTotal;
+    }
+
+    public void ajouter(Voiture voiture) {
+        voitures.add(voiture);
+    }
+}
