@@ -1,4 +1,6 @@
-package camelia;
+package service;
+
+import data.Voiture;
 
 public interface Statistique {
 
