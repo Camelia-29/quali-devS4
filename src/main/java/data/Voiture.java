@@ -1,4 +1,4 @@
-package camelia;
+package data;
 
 public class Voiture{
     public String marque;

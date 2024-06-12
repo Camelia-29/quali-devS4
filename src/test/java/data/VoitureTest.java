@@ -1,4 +1,4 @@
-package camelia;
+package data;
 
 import org.junit.jupiter.api.Test;
 
