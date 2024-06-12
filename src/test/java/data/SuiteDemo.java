@@ -7,8 +7,8 @@ import org.junit.platform.suite.api.SuiteDisplayName;
 
 @Suite
 @SuiteDisplayName("Suite Test VenteVoiture")
-@SelectPackages("data, service")
-@IncludeClassNamePatterns(".*Tests")
+@SelectPackages({"data", "service"})
+@IncludeClassNamePatterns(".*Test")
 public class SuiteDemo {
 }
 
