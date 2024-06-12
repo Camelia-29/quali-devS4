@@ -10,10 +10,18 @@ public class VoitureTest {
         Voiture v = new Voiture("bmw",54712);
         assertEquals("bmw",v.getMarque());
         assertEquals(54712,v.getPrix());
+    }
 
+    @Test
+    public void testMarque() {
+        Voiture v = new Voiture("c1", 36521);
         v.setMarque("citroen");
         assertEquals("citroen", v.getMarque());
-        v.setPrix(36521);
-        assertEquals(36521, v.getPrix());
     }
+    @Test
+    public void testPrix() {
+        Voiture v = new Voiture("bmw", 40000);
+        v.setPrix(6000);
+        assertEquals(6000, v.getPrix());}
+
 }
